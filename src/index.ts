@@ -1,6 +1,6 @@
 import express from "express";
 import path from "path";
-const app = express();
+const app: express.Application = express();
 const port = 8080;
 app.get( "/", ( req, res ) => {
     res.send("go to /server or /client");
